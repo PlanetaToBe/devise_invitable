@@ -178,10 +178,6 @@ module Devise
           invitable.valid? if self.validate_on_invite
           if invitable.new_record?
             invitable.errors.clear if !self.validate_on_invite and invitable.invite_key_valid?
-          elsif !invitable.invited_to_sign_up? || !self.resend_invitation
-            invite_key_array.each do |key|
-              invitable.errors.add(key, :taken)
-            end
           end
 
           if invitable.errors.empty?
