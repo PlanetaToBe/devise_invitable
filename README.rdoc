@@ -1,5 +1,10 @@
 = DeviseInvitable
-{<img src="http://travis-ci.org/scambra/devise_invitable.png"/>}[http://travis-ci.org/scambra/devise_invitable]
+
+=== Notice
+
+This is no longer used or maintained by ToBe. We have returned to using the standard devise-invitable gem
+
+=== /Notice
 
 It adds support to devise[http://github.com/plataformatec/devise] for send invitations by email (it requires to be authenticated) and accept the invitation setting the password.
 
